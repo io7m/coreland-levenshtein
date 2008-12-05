@@ -1,0 +1,4 @@
+
+-- ./levenshtein.apk
+pragma source_file_name(levenshtein, spec_file_name => "levenshtein.ads");
+pragma source_file_name(levenshtein, body_file_name => "levenshtein.adb");
