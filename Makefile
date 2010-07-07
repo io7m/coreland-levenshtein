@@ -226,19 +226,13 @@ levenshtein.a:\
 cc-slib levenshtein.sld levenshtein.o
 	./cc-slib levenshtein levenshtein.o
 
-levenshtein.ali:\
+levenshtein.o levenshtein.ali:\
 ada-compile levenshtein.adb levenshtein.ads
 	./ada-compile levenshtein.adb
 
-levenshtein.o:\
-levenshtein.ali
-
-levenshtein_comp.ali:\
+levenshtein_comp.o levenshtein_comp.ali:\
 ada-compile levenshtein_comp.adb levenshtein.ads
 	./ada-compile levenshtein_comp.adb
-
-levenshtein_comp.o:\
-levenshtein_comp.ali
 
 mk-adatype:\
 conf-adacomp conf-systype
